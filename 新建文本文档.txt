@@ -1,0 +1,16 @@
+local host
+	psftp -i d:/test.ppk ec2-user@127.23.45.23
+	put d:/test.ppk
+
+
+instance A
+	ls test.ppk
+	chmod 400 "test.ppk"
+	ssh -i "test.ppk" ec2-user@127.23.45.23
+
+instance B
+	wget www.geogle.com
+
+
+巨柏邀明月
+对影成3人
